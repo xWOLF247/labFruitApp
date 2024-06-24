@@ -5,22 +5,22 @@ import { NavigationContainer } from "@react-navigation/native";
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 import { createStackNavigator } from "@react-navigation/stack";
-import RegistrarCuenta from "./Navegacion/RegistrarCuenta";
-import RegistrarProducto from "./Navegacion/RegistrarProducto";
-import Main from "./Navegacion/Principal";
-import iniciarSesion from "./Navegacion/Login";
-import Aprender from "./Navegacion/Aprender+";
-import ListarProducto from "./Navegacion/ListarProducto";
+import RegistrarCuenta from "./Navegacion/RegisterAccount";
+import RegistrarProducto from "./Navegacion/RegisterProduct";
+import Main from "./Navegacion/Main";
+import IniciarSesion from "./Navegacion/Login";
+import Aprender from "./Navegacion/Learn";
+import ListarProducto from "./Navegacion/ProductList";
 
 const Stack = createStackNavigator();
 
 function Stacks (){
 return (
-    <Stack.Navigator initialRouteName="Login">
+    <Stack.Navigator initialRouteName="IniciarSesion">
 
     <Stack.Screen name = "Main" component={Main}/>
 
-    <Stack.Screen name="Login" component={iniciarSesion}/>
+    <Stack.Screen name="IniciarSesion" component={IniciarSesion}/>
 
     <Stack.Screen name="RegistrarCuenta" component={RegistrarCuenta}/>
 

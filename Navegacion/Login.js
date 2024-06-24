@@ -5,7 +5,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { useNavigation } from "@react-navigation/native";
 
 
-export default function iniciarSesion() {
+export default function IniciarSesion() {
     const navigation = useNavigation();
 
     
